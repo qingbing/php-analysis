@@ -1,0 +1,34 @@
+{
+  "name": "qingbing/php-analysis",
+  "description": "文本内容分词、文章关键字提取",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "yii",
+    "yii2",
+    "php",
+    "analysis",
+    "php-analysis",
+    "phpAnalysis"
+  ],
+  "homepage": "http://www.phpcorner.net",
+  "authors": [
+    {
+      "name": "qingbing",
+      "email": "780042175@qq.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-curl": "*",
+    "php": "^7.1.0",
+    "qingbing/zf-helper": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zf\\PhpAnalysis\\": "src"
+    }
+  }
+}
