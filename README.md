@@ -46,7 +46,7 @@ var_dump($res);
 $res = $analysis->setWordInfos("中国", ['c' => 4, 'm' => 'n1']);
 var_dump($res);
 
-// 指定某词的词性信息（通常是新词）
+// 导出词典的词条到文件中
 //$analysis->ExportDict("xx.txt"); // NULL, 导出词典的词条到xx.txt文件
 
 // 开始解析文章, 相当于 $analysis->setSource + $analysis->StartAnalysis
