@@ -157,11 +157,16 @@ class PhpAnalysis extends Singleton
      * 获取最终提取的关键字
      *
      * @param int $num 提取关键词的个数
-     * @return array
+     * @param bool $isArray
+     * @return array|string
      */
-    public function getFinallyKeywords(int $num = 10): array
+    public function getFinallyKeywords(int $num = 10, $isArray = true)
     {
-        return explode(",", $this->analysis->GetFinallyKeywords(--$num));
+        if ($isArray) {
+            return explode(",", $this->analysis->GetFinallyKeywords(--$num));
+        } else {
+            return $this->analysis->GetFinallyKeywords(--$num);
+        }
     }
 
     /**
